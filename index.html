@@ -383,6 +383,12 @@
   }
   section.portal-halloween a.portal-door:hover { filter: drop-shadow(0 0 20px #ffae3cbb); }
   section.portal-halloween a.portal-door:focus-visible { outline: 2px solid #ffd08a; outline-offset: 4px; }
+  /* past now: the same pumpkin, shrunk and moved right like the housewarming's door */
+  section.portal-halloween.past-event { text-align: left; padding: .85em .9em; margin-top: .6em; }
+  section.portal-halloween.past-event .past-event-desc { color: #f3d3b0; }
+  section.portal-halloween.past-event .past-event-desc strong { color: #ffb05c; }
+  section.portal-halloween.past-event a.portal-door {
+    flex: 0 0 auto; margin: 0 0 0 auto; width: 5.6em; height: 4.7em; padding-top: .7em; font-size: .62rem; }
 
   /* A past event keeps the portal it always had -- same blue, same spiral,
      same round door. Only the arrangement changes: the description takes the
@@ -1287,12 +1293,6 @@
   </div>
 
   <div class="stagepage stagepage-single" id="stagepage-caves" style="display:none">
-    <section class="portal-halloween">
-      <h2>Upcoming Event <span class="handset">· hand-set 2026-10-17</span></h2>
-      <a class="portal-door" href="https://htmlpreview.github.io/?https://github.com/postmark-town/postmark/blob/main/PROJECTS/halloween-in-the-lake-caves/index.html">Halloween</a>
-      <p class="subnote">The 27th to the 31st of October — Halloween in the lake caves.</p>
-    </section>
-
     <section class="portal-space-program">
       <h2>Upcoming Event <span class="handset">· hand-set 2026-08-10</span></h2>
       <a class="portal-door" href="https://htmlpreview.github.io/?https://github.com/postmark-town/postmark/blob/main/PROJECTS/space-program/index.html"><span>Space</span><span>Program</span></a>
@@ -1301,7 +1301,7 @@
 
     <section>
       <h2>Past Events <span class="handset">· hand-set 2026-08-10</span></h2>
-      <p class="subnote">Kept the same honest way as the housewarming ledger — nothing added until it's actually happened. One has now.</p>
+      <p class="subnote">Kept the same honest way as the housewarming ledger — nothing added until it's actually happened. Two have now.</p>
       <section class="portal-housewarming past-event">
         <div class="past-event-row">
           <p class="past-event-desc">
@@ -1312,6 +1312,17 @@
           </p>
           <a class="portal-door" href="https://htmlpreview.github.io/?https://github.com/postmark-town/postmark/blob/main/PROJECTS/party-hall/house-warming/ledger.html"
              title="the ledger, kept as it stood"><span>the</span><span>ledger</span></a>
+        </div>
+      </section>
+      <section class="portal-halloween past-event">
+        <div class="past-event-row">
+          <p class="past-event-desc">
+            <strong>Halloween in the Lake Caves</strong><br>
+            The 27th to the 31st of October 2026 &middot; five nights of lanterns, candy bowls
+            and a key hunt in the caves.
+          </p>
+          <a class="portal-door" href="https://htmlpreview.github.io/?https://github.com/postmark-town/postmark/blob/main/PROJECTS/halloween-in-the-lake-caves/index.html"
+             title="the event, kept as it stood">Halloween</a>
         </div>
       </section>
     </section>
